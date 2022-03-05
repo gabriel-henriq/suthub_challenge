@@ -44,7 +44,7 @@ def fetch_content_to_dict(url: str, headers: dict):
 
 
 def get_pet_names_from_response_dict(dict_response: dict):
-    pet_names = 
+    pet_names = []
     for policies in dict_response["response"]:
         for policy in policies["policies"]:
             for covered_goods in policy["covered_goods"]:
